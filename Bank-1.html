@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>My Simple Form</title>
+	<style>
+
+	body {
+    font-size: 16px;
+    font-family: verdana;
+    color: white;
+    background: #DC1431;
+}
+.box {
+    border-radius: 10px;
+    padding: 30px;
+    text-align: left;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px #ccc;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+	i {
+	color:black;
+	}
+	.bankName{text-align: center;}
+	
+	</style>
+	<script type="text/javascript">
+		document.write("<ul class='box'>");
+		var Blance;
+		var Deposit;
+		var Withdrawal;
+		var FirstName;
+		var LastName;
+
+		FirstName = prompt("Pease enter your fisrt name:");
+		LastName = prompt("Pease enter your last name:");
+		alert("Welcome " +  FirstName + " " + LastName);
+		document.write("<li>Welcome " +  FirstName + " " + LastName +"</li>");
+
+		Balance = prompt("Pease enter balance for your bank account:");
+		alert("Your balance is $" +  Balance);
+		document.write("<li>Your initial balance was <i>$" +  Balance + "</i></li>");
+		
+	    Deposit = prompt("Please enter deposit:");
+		var Total = eval(Deposit) + eval(Balance);
+		alert ("Total balance: $" + Total);
+		document.write("<li>You added <i>$" +  Deposit + "</i>, so the balance changed to <i>$" + Total + "</i></li>");
+		
+	    Withdrawal = prompt("Please enter withdrawal:");
+		Total = Total - eval(Withdrawal);
+		alert ("Total balance: $" + Total);
+		document.write("<li>You withdrew <i>$" +  Withdrawal + "</i>, so the balance changed to <i>$" + Total + "</i></li>");
+		
+	    Withdrawal = alert("Have a good day!");
+		document.write("<li>You final balance is <i>$" + Total + "</i></li>");
+		document.write("<li>Have a good day!</li>");
+			
+		document.write("</ul>");
+	</script>
+</head>
+<body>
+<p class="bankName" >Welcome to Persia Bank</p>
+</body>
+</html>
