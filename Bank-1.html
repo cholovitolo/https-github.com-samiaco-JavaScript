@@ -30,7 +30,7 @@
 		document.write("<ul class='box'>");
 		var Balance;
 		var Deposit;
-		var Withdrawal;
+		var Withdrawl;
 		var FirstName;
 		var LastName;
 
@@ -48,16 +48,15 @@
 		alert ("Total balance: $" + Total);
 		document.write("<li>You added <i>$" +  Deposit + "</i>, so the balance changed to <i>$" + Total + "</i></li>");
 		
-	    Withdrawal = prompt("Please enter withdrawal:");
-		Total = Total - eval(Withdrawal);
+	    Withdrawl = prompt("Please enter withdrawl:");
+		Total = Total - eval(Withdrawl);
 		alert ("Total balance: $" + Total);
-		document.write("<li>You withdrew <i>$" +  Withdrawal + "</i>, so the balance changed to <i>$" + Total + "</i></li>");
+		document.write("<li>You withdrew <i>$" +  Withdrawl + "</i>, so the balance changed to <i>$" + Total + "</i></li>");
 		
-	    Withdrawal = alert("Have a good day!");
+	    Withdrawl = alert("Have a good day!");
 		document.write("<li>You final balance is <i>$" + Total + "</i></li>");
-		document.write("<li>Have a good day!</li>");
-			
-		document.write("</ul>");
+		document.write("<li>Have a good day!</li></ul>");
+		
 	</script>
 </head>
 <body>
